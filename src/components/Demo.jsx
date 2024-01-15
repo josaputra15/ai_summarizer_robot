@@ -83,7 +83,7 @@ const Demo = () => {
             type='submit'
             className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
           >
-            <p>↵</p>
+         <p className='text-xs'>Summarize</p>
           </button>
         </form>
 
