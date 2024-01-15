@@ -11,10 +11,10 @@ const Demo = () => {
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
 
-  // RTK lazy query
+
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
-  // Load data from localStorage on mount
+
   useEffect(() => {
     const articlesFromLocalStorage = JSON.parse(
       localStorage.getItem("articles")
@@ -39,14 +39,12 @@ const Demo = () => {
       const newArticle = { ...article, summary: data.summary };
       const updatedAllArticles = [newArticle, ...allArticles];
 
-      // update state and local storage
       setArticle(newArticle);
       setAllArticles(updatedAllArticles);
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
   };
 
-  // copy the url and toggle the icon for user feedback
   const handleCopy = (copyUrl) => {
     setCopied(copyUrl);
     navigator.clipboard.writeText(copyUrl);
@@ -80,8 +78,7 @@ const Demo = () => {
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             onKeyDown={handleKeyDown}
             required
-            className='url_input peer' // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
-          />
+            className='url_input peer' />
           <button
             type='submit'
             className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
