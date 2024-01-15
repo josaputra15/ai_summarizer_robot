@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
+      <h1 className='text-gradient from-red-500 to-purple-500 text-lg font-bold'>SumAI</h1>
 
         <button
           type='button'
