@@ -21,12 +21,13 @@ const Hero = () => {
 
       <h1 className='head_text'>
         Summarize Your Articles with <br className='max-md:hidden' />
-        <span className='red_gradient '>OpenAI GPT-4</span>
+        <span className='red_gradient '>JS-AI Mark-IV</span>
       </h1>
       <h2 className='desc'>
         Simplify your reading with SumAI
       </h2>
     </header>
+    
   );
 };
 
