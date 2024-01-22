@@ -139,6 +139,17 @@ const Demo = () => {
       </div>
       <footer className='text-center text-gray-500 text-sm mt-8'>
         &copy; Joseph Saputra | All Rights Reserved
+        <p className='mt-2'>
+          This is a demo. Please give me any feedbacks&nbsp;
+          <a
+            href='https://ngl.link/evergardenpen'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-500 underline'
+          >
+            here
+          </a>.
+        </p>
       </footer>
     </section>
     
